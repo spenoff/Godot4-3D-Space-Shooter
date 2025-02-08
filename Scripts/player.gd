@@ -14,4 +14,6 @@ func _physics_process(delta):
 	rotation_degrees.x = velocity.y / 2
 	rotation_degrees.y = -velocity.x / 2
 	move_and_slide()
+	transform.origin.x = clamp(transform.origin.x, -30, 10)
+	transform.origin.y = clamp(transform.origin.y, -10, 10)
 	
